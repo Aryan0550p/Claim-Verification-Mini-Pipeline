@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# Scratch / working files (raw text dumps, OCR leftovers, etc.)
+*_full.txt
+*_pdfplumber.txt
+soliqua_lbl.txt
+assignment_text.txt
+claims_verify.txt
+papers_overview.txt
+
+# API keys — never commit
+.env
+*.key
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Original PDF aliases in root (papers/ folder is the canonical location)
+C2C4C6.pdf
+C3.pdf
+C5C7.pdf
+C7.pdf
+"sanofi Promo Material.pdf"

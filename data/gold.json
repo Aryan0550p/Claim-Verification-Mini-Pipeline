@@ -1,0 +1,51 @@
+[
+  {
+    "claim_id": "C1",
+    "verdict": "supported",
+    "evidence_page": 4,
+    "evidence_span": "SOLIQUA (insulin glargine and lixisenatide) injection, for subcutaneous use is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus inadequately controlled on basal insulin (less than 60 units daily) or lixisenatide.",
+    "why": "Claim C1 restates the approved indication. The SOLIQUA Prescribing Information (LBL page 4) explicitly states the indication for adults with T2DM insufficiently controlled on basal insulin or oral agents. This is a direct regulatory label statement and is fully supported."
+  },
+  {
+    "claim_id": "C2",
+    "verdict": "supported",
+    "evidence_page": 5,
+    "evidence_span": "-1.3 \u00b1 0.1 % iGlarLixi (n=443) -1.1 \u00b1 0.1 % BIAsp 30 (n=444) LS mean difference iGlarLixi vs BIAsp 30 (97.5% CI); p-value -0.2 (-0.4, -0.1) %; <0.001",
+    "why": "The SoliMix paper (Rosenstock 2021) Figure 1B shows LS mean +/- SE change in HbA1c: iGlarLixi -1.3 +/- 0.1%, BIAsp 30 -1.1 +/- 0.1%, with 95% CI -0.4, -0.1 and p<0.001. The claim states '95% CI -0.4, -0.1; p<0.001' which matches the paper. Note: the 97.5% CI for noninferiority is the same numbers; the paper also demonstrates statistical superiority (p<0.001). The numbers and CI are correctly reported. Verdict: supported."
+  },
+  {
+    "claim_id": "C3",
+    "verdict": "overstated",
+    "evidence_page": 3,
+    "evidence_span": "Greater reductions in HbA1c from baseline (8.1%; 65mmol/mol) were achieved with iGlarLixi compared with iGlar and Lixi (\u22121.6%, \u22121.3%, \u22120.9%, respectively)",
+    "why": "The LixiLan-O paper shows iGlarLixi reduced HbA1c by -1.6% vs iGlar by -1.3%. The ratio is 1.6/1.3 = 1.23x, not ~2x. The claim '~2x greater HbA1c reduction vs basal insulin' is a major overstatement. The paper does not state a 2x reduction anywhere. 1.23x is the actual computed ratio."
+  },
+  {
+    "claim_id": "C4",
+    "verdict": "supported",
+    "evidence_page": 6,
+    "evidence_span": "42.2 (n=187) 1.65 (1.25, 2.19) 31.8 (n=141) Participants who reached HbA1c <7% iGlarLixi (n=443) BIAsp 30 (n=444)",
+    "why": "SoliMix paper Figure 2 shows 42.2% (n=187) of iGlarLixi patients vs 31.8% (n=141) of BIAsp 30 patients reached HbA1c <7%, with OR 1.65 (95% CI 1.25, 2.19). The claim states exactly '42.20% vs 31.80% (OR 1.65; 95% CI 1.25-2.19)' which matches verbatim. Verdict: supported."
+  },
+  {
+    "claim_id": "C5",
+    "verdict": "cannot_verify",
+    "evidence_page": 1,
+    "evidence_span": "Mean body weight decreased with iGlarLixi (\u22120.3kg) and Lixi (\u22120.9kg), and increased with iGlar (+1.1kg; difference 1.4kg, p<0.0001)",
+    "why": "The LixiLan-L abstract (C5C7.pdf) mentions weight decreased by -0.9 kg with iGlarLixi vs increased +1.1 kg with iGlar. However, the 'weight neutral' claim comes from LixiLan-L, which is cited for basal insulin inadequately controlled patients (LixiLan-L). The abstract does show a slight weight decrease (-0.9 kg), not strictly 'neutral', but the full text is paywalled. 'Weight neutral' is a qualitative characterization that cannot be directly verified against the abstract numbers without the full LBL weight charts (which are image-based and unextractable). Without the full text or the LBL chart data, cannot_verify is the safe verdict. The abstract shows a small weight decrease, which could reasonably be called 'weight neutral' but this is an interpretation, not a stated claim in the abstract."
+  },
+  {
+    "claim_id": "C6",
+    "verdict": "supported",
+    "evidence_page": 7,
+    "evidence_span": "6.3 (n=28) 0.45 (0.28, 0.73) 12.9 (n=57) Level 2 hypoglycemia (ADA definition: <54 mg/dL [<3.0 mmol/L]) iGlarLixi (n=442) BIAsp 30 (n=441)",
+    "why": "SoliMix paper Figure 3A shows Level 2 hypoglycemia incidence: iGlarLixi 6.3% (n=28) vs BIAsp 30 12.9% (n=57), OR 0.45 (95% CI 0.28, 0.73). The claim states 'OR 0.45 (0.28, 0.73)' which matches exactly. Verdict: supported."
+  },
+  {
+    "claim_id": "C7",
+    "verdict": "cannot_verify",
+    "evidence_page": 1,
+    "evidence_span": "At study end, estimated treatment differences for reduction in HbA1c and weight change, and ratio of hypoglycemia events per patient-year (BB vs iGlarLixi) were -0.28% (standard error 0.08, P = 0.0002), -1.32 kg (standard error 0.30, P < 0.0001), and 2.85 (P < 0.0001), respectively, all favoring iGlarLixi",
+    "why": "The Tabak 2020 PSM paper compares iGlarLixi vs basal-bolus (BB) regimen, not 'switching from basal insulin' per se. The weight benefit in Tabak 2020 is vs a BB comparator; SoliMix (C2C4C6) compares vs BIAsp 30 premix, not pure basal insulin switch; LixiLan-L abstract (C5C7) compares vs iGlar (basal insulin). The claim says 'weight benefit while switching from basal insulin shown across three trial panels' - but SoliMix is not a basal insulin switch population (it's advancement beyond basal), and Tabak PSM is a post-hoc matched analysis vs BB. The claim over-characterizes all three as 'switching from basal insulin.' The LixiLan-L abstract does show weight benefit vs basal insulin, Tabak does show weight benefit vs BB, SoliMix shows weight benefit vs premix. Only LixiLan-L is strictly a basal insulin comparator. Cannot fully verify the '3-panel' weight benefit claim specifically as 'switching from basal insulin' across all three."
+  }
+]

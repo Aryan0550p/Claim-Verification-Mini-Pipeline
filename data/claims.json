@@ -1,0 +1,51 @@
+[
+  {
+    "claim_id": "C1",
+    "text": "Indicated for adults with type 2 diabetes insufficiently controlled on basal insulin or oral agents",
+    "population": "adults with type 2 diabetes",
+    "molecule": "iGlarLixi (insulin glargine 100 U/mL + lixisenatide)",
+    "cited_paper": "SOLIQUA_LBL.pdf (Prescribing Information, page 4)"
+  },
+  {
+    "claim_id": "C2",
+    "text": "Superior HbA1c reduction with once-daily iGlarLixi (1.3 +/- 0.1%) vs twice-daily premix insulin BIAsp 30 (1.1 +/- 0.1%); 95% CI -0.4, -0.1; p<0.001",
+    "population": "T2DM suboptimally controlled on basal insulin",
+    "molecule": "iGlarLixi vs BIAsp 30",
+    "cited_paper": "papers/SoliMix_Rosenstock2021.pdf"
+  },
+  {
+    "claim_id": "C3",
+    "text": "With SOLIQUA, ~2x greater HbA1c reduction vs basal insulin (iGlar 100 U/mL), p<0.0001, from baseline to Week 30",
+    "population": "T2DM inadequately controlled on oral agents",
+    "molecule": "iGlarLixi vs iGlar (basal insulin)",
+    "cited_paper": "papers/LixiLan-O_Rosenstock2016.pdf"
+  },
+  {
+    "claim_id": "C4",
+    "text": "More patients achieved HbA1c <7% with iGlarLixi than premix BIAsp 30: 42.20% vs 31.80% (OR 1.65; 95% CI 1.25-2.19)",
+    "population": "T2DM suboptimally controlled on basal insulin",
+    "molecule": "iGlarLixi vs BIAsp 30",
+    "cited_paper": "papers/SoliMix_Rosenstock2021.pdf"
+  },
+  {
+    "claim_id": "C5",
+    "text": "Weight neutral",
+    "population": "T2DM inadequately controlled on basal insulin and metformin",
+    "molecule": "iGlarLixi",
+    "cited_paper": "papers/LixiLan-L_Aroda2016_abstract.pdf"
+  },
+  {
+    "claim_id": "C6",
+    "text": "Lower risk of level-2 hypoglycemia (ADA: <54 mg/dL) with iGlarLixi vs premix BIAsp 30 [OR 0.45 (0.28, 0.73)]",
+    "population": "T2DM suboptimally controlled on basal insulin",
+    "molecule": "iGlarLixi vs BIAsp 30",
+    "cited_paper": "papers/SoliMix_Rosenstock2021.pdf"
+  },
+  {
+    "claim_id": "C7",
+    "text": "Weight benefit while switching from basal insulin, shown across three trial panels (LixiLan-L, SoliMix, propensity-score-matching analysis)",
+    "population": "T2DM switching from basal insulin",
+    "molecule": "iGlarLixi",
+    "cited_paper": "papers/Tabak2020_PSM.pdf (plus LixiLan-L abstract and SoliMix)"
+  }
+]

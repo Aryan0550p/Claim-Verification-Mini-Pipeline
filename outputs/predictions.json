@@ -1,0 +1,125 @@
+[
+  {
+    "claim_id": "C1",
+    "verdict": "supported",
+    "checks": {
+      "figure": "unclear",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "match"
+    },
+    "evidence_page": 4,
+    "evidence_span": "Indication: SOLIQUA® is indicated for the treatment of adults with diabetes Mellitus with an adjunct to diet and exercise in addition to metformin with or without SGLT2 inhibitors, when this has not been provided by metformin alone or (sulfonylurea, glinide, DPP-4 inhibitors or gliptins, and Sodium-glucose co- transporter 2 (SGLT2) inhibitors or glifozins) or with basal insulin administration.",
+    "computed": null,
+    "reason": "The source explicitly states that SOLIQUA® is indicated for adults with diabetes Mellitus when control has not been provided by various oral agents or basal insulin administration, which directly supports the claim's population and prior treatment conditions."
+  },
+  {
+    "claim_id": "C2",
+    "verdict": "supported",
+    "checks": {
+      "figure": "match",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "match"
+    },
+    "evidence_page": 5,
+    "evidence_span": "Superiority:\nLS mean difference iGlarLixi\nvs BIAsp 30 (95% CI); p-value\n-0.2 (-0.4, -0.1) %; <0.001\n-1.3 ± 0.1 %\n-1.1 ± 0.1 %",
+    "computed": {
+      "claimed_iglarlixi_reduction": 1.3,
+      "claimed_biasp_reduction": 1.1,
+      "claimed_difference": 0.2,
+      "python_computed_difference": 0.2,
+      "difference_matches": true
+    },
+    "reason": "The source explicitly states the superior HbA1c reduction for iGlarLixi vs BIAsp 30, matching the claimed values for reduction, confidence interval, and p-value, for the specified population and drug indication."
+  },
+  {
+    "claim_id": "C3",
+    "verdict": "overstated",
+    "checks": {
+      "figure": "mismatch",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "mismatch"
+    },
+    "evidence_page": 13,
+    "evidence_span": "The least squares (LS) mean changes from baseline to Week 30 in HbA1c were −1.63% for iGlarLixi, −1.34% for iGlar, and −0.85% for Lixi (Table 2; Fig. 1B). The LS mean HbA1c difference at Week 30 between iGlarLixi and iGlar (−0.3% [−3.2 mmol/mol] [95% CI: −0.4, −0.2 (−4.2 mmol/mol, −2.1 mmol/mol); p<0.0001]) met non-inferiority of iGlarLixi compared with iGlar and also demonstrated superiority for this primary efficacy endpoint (p<0.0001) based on the step-down testing procedure.",
+    "computed": {
+      "claimed_ratio": "~2x",
+      "source_iglarlixi_ls_mean_reduction_pct": 1.63,
+      "source_iglar_ls_mean_reduction_pct": 1.34,
+      "python_computed_ratio": 1.2164,
+      "ratio_matches_2x": false,
+      "note": "Paper Table 2: LS mean -1.63% (iGlarLixi) vs -1.34% (iGlar); ratio=1.22x, not ~2x"
+    },
+    "reason": "The source states HbA1c reductions of -1.63% for iGlarLixi and -1.34% for iGlar, which is a ratio of approximately 1.22x, not '~2x' as claimed. The p-value and time point match, but the magnitude of reduction is overstated."
+  },
+  {
+    "claim_id": "C4",
+    "verdict": "supported",
+    "checks": {
+      "figure": "match",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "match"
+    },
+    "evidence_page": 6,
+    "evidence_span": "Participants who reached HbA1c <7 %\niGlarLixi (n=443) 42.2 (n=187)\nBIAsp 30 (n=444) 31.8 (n=141)\nOR (95% CI)*; p value (adjusted) 1.65 (1.25, 2.19)",
+    "computed": {
+      "claimed_iglarlixi_pct": 42.2,
+      "claimed_biasp_pct": 31.8,
+      "claimed_or": 1.65,
+      "python_crude_or": 1.5658,
+      "note": "crude_or differs from adjusted OR in paper; adjusted OR=1.65 used by paper"
+    },
+    "reason": "The source text explicitly states that 42.2% of iGlarLixi patients and 31.8% of BIAsp 30 patients achieved HbA1c <7%, with an OR of 1.65 (95% CI 1.25-2.19), matching all figures and the population."
+  },
+  {
+    "claim_id": "C5",
+    "verdict": "cannot_verify",
+    "checks": {
+      "figure": "unclear",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "mismatch"
+    },
+    "evidence_page": 1,
+    "evidence_span": null,
+    "computed": null,
+    "reason": "The provided source text only includes the paper's title and a note, but the actual abstract content that would discuss weight is missing. Therefore, the claim 'Weight neutral' cannot be verified."
+  },
+  {
+    "claim_id": "C6",
+    "verdict": "supported",
+    "checks": {
+      "figure": "match",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "match"
+    },
+    "evidence_page": 7,
+    "evidence_span": "Lower incidence of hypoglycemia with iGlarLixi versus BIAsp 30 was also observed across level 1 and level 2 hypoglycemia categories (Fig. 3).\n\nLevel 2 hypoglycemia\n(ADA definition: <54 mg/dL [<3.0 mmol/L])\nIncidence, % (n)\niGlarLixi (n=442) 6.3 (n=28)\nBIAsp 30 (n=441) 12.9 (n=57)\nRelative odds\nreduction iGlarLixi\nvs BIAsp 30\nOR† (95% CI)\n0.45 (0.28, 0.73)",
+    "computed": {
+      "claimed_or": 0.45,
+      "source_iglarlixi_incidence_pct": 6.3,
+      "source_biasp_incidence_pct": 12.9,
+      "python_crude_or": 0.454,
+      "note": "crude_or approximation; paper uses logistic regression adjusted OR"
+    },
+    "reason": "The source text explicitly states a lower incidence of level 2 hypoglycemia with iGlarLixi versus BIAsp 30 and provides the exact odds ratio [OR 0.45 (0.28, 0.73)] and the ADA definition (<54 mg/dL) in Figure 3A, which is referenced in the safety profile section."
+  },
+  {
+    "claim_id": "C7",
+    "verdict": "cannot_verify",
+    "checks": {
+      "figure": null,
+      "population": null,
+      "drug_indication": null,
+      "actually_stated": null
+    },
+    "evidence_page": null,
+    "evidence_span": null,
+    "computed": null,
+    "reason": "LLM call failed or returned no response."
+  }
+]
